@@ -42,29 +42,8 @@ navigation: {
 
 
 //main_menu_hot 슬라이드
-/* $('.owl-carousel').owlCarousel({
-    items:2,
-    loop:true,
-    margin:10,
-    nav:true,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:2
-        }
-    }
-})
- */
 $('.owl-carousel').owlCarousel({
-   items: 2,
+    items: 2,
     loop: true,
     margin: 10,
     nav: true,
