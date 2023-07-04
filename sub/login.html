@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/script_login.js" defer></script>
+</head>
+<body>
+    <section id="content">
+        <div class="inner">
+            <div class="form">
+                <div class="join-title">
+                    <div class="title">
+                        <h2>회원가입</h2>
+                    </div>
+                    <ul class="location">
+                        <li><a href="#">홈</a></li>
+                        <li><a href="#"> 회원가입</a></li>
+                    </ul>
+                    <ul class="register_step">
+                        <li><a href="#">약관동의</a></li>
+                        <li><a href="#">인증</a></li>
+                        <li class="step3">
+                            <a href="#"><strong>정보입력</strong></a>
+                        </li>
+                        <li><a href="#">가입완료</a></li>
+                    </ul>
+                </div>
+                <fieldset>
+                    <form action="#" id="join" method="post" name="join">
+                        <h3>가입자정보</h3>
+                        <ul>
+                            <li>
+                                <label for="name" class="ir_so">이름</label>
+                                <span id="nameMes" class="message"></span>
+                                <input type="text" id="name" class="line" required size="30" placeholder="이름">
+                            </li>
+                            <li>
+                                <label for="phone" class="ir_so">휴대폰 번호</label>
+                                <span id="phMes" class="message"></span>
+                                <input type="text" id="phone" class="line" required size="12" placeholder="휴대폰 번호 '-' 구분 없이 입력">
+                            </li>
+                            <li>
+                                <label for="idArea" class="ir_so">아이디</label>
+                                <span id="idMes" class="message"></span>
+                                <input type="text" id="idArea" class="line" required size="30" placeholder="아이디" value="">
+                                <button>중복 체크</button>
+                            </li>
+                            <li> 
+                                <label for="email" class="ir_so">이메일</label>
+                                <span id="eMes" class="message"></span>
+                                <input type="text" id="email" class="line" required size="30" placeholder="E-mail">
+                                <button>중복 체크</button>
+                            </li>
+                            <li>
+                                <label for="pwArea" class="ir_so">비밀번호</label>
+                                <span id="pwMes" class="message"></span>
+                                <input type="password" id="pwArea" class="line" required size="30" placeholder="비밀번호">
+                            </li>
+                            <li>
+                                <label for="pwArea" class="ir_so">비밀번호 확인</label>
+                                <span id="pwMes2" class="message"></span>
+                                <input type="password" id="pwArea2" class="line" required size="30" placeholder="비밀번호 확인">
+                            </li>  
+                        </ul>
+                        <div class="info-text">
+                            <dl>
+                                <dt>아이디 설정 시 유의사항</dt>
+                                <dd>영문자로 시작하는 영문자 또는 숫자 6글자 이상 20글자 미만으로 작성해주세요.</dd>
+                                <dt>비밀번호 설정 시 유의사항</dt>
+                                <dd>영문자,숫자,특수문자 조합하여 8~12자리어야 합니다.</dd>
+                                <dd>사용 가능 특수문자: !”#$%’()*+,-./:;<=>?@^_|~</dd>
+                            </dl>
+                        </div>
+                        <div class="btn-wrap">
+                            <a href="#" class="btn">취소</a>
+                            <input type="text" value="회원가입" class="btn" id="submit">
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
