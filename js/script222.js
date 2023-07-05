@@ -1,10 +1,28 @@
-//app-btn toggle
+// app-btn toggle
 const appBtn=$('.appbarBt');
-appBtn.on({click:function (){
-    $('.bar').toggleClass('active');
-}})
+const bg=$('.mob-bg');
+const mobContent=$('.mob-gnb .mob-content');
+
+appBtn.on({click: function() {
+    $('.bar').addClass('active');
+    bg.addClass('on');
+    mobContent.addClass('active');
+    }
+});
+
+bg.on({click: function() {
+    $('.bar').removeClass('active');
+    mobContent.removeClass('active');
+    bg.removeClass('on');
+    }
+});
 
 
+//mob-nav depth toggle
+const menu = $('.mob-depth1');
+menu.click(function(){
+    $(this).next('.mob-depth2').toggleClass('on')
+})
 
 
 //메인 슬라이드
@@ -43,14 +61,18 @@ owl.owlCarousel({
             items:1,
             nav:true
         },
-        600:{
+        680:{
+            items:2,
+            nav:false
+        },
+        768:{
             items:3,
             nav:false
         },
-        1000:{
+        1100:{
             items:4,
             nav:true,
-            loop:false
+            loop:true
         }
     }    
 });
