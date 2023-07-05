@@ -21,6 +21,7 @@ menu.click(function(){
     $(this).next('.mob-depth2').toggleClass('on')
 })
 
+
 //메인 슬라이드 스와이퍼
 var swiper = new Swiper(".mySwiper", {
 spaceBetween: 30,
@@ -29,16 +30,17 @@ loop:true,
 autoplay: {
     delay: 2500,
     disableOnInteraction: false,
-},
+}, 
 pagination: {
     el: ".swiper-pagination",
-    clickable: true,
+    type: "progressbar",
 },
 navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-},
+}
 });
+
 
 
 //main_menu_hot 슬라이드
@@ -63,4 +65,4 @@ $('.owl-carousel').owlCarousel({
             items:2
         }
     }
-})
+}) 
