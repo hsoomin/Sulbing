@@ -52,6 +52,8 @@ owl.owlCarousel({
     items:4,
     loop:true,
     margin:30,
+    nav:true,
+    navText:['',''], 
     autoplay:true,
     autoplayTimeout:2000,
     autoplayHoverPause:true,
@@ -77,4 +79,11 @@ owl.owlCarousel({
     }    
 });
 
-    
+//////
+$(document).ready(function(){
+    var currentPosition = parseInt($(".quick-menu").css("top"));
+    $(window).scroll(function() {
+        var position = $(window).scrollTop(); 
+        $(".quick-menu").stop().animate({"top":position+currentPosition+"px"},1000);
+    });
+});
