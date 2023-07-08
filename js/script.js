@@ -79,11 +79,4 @@ owl.owlCarousel({
     }    
 });
 
-//////
-$(document).ready(function(){
-    var currentPosition = parseInt($(".quick-menu").css("top"));
-    $(window).scroll(function() {
-        var position = $(window).scrollTop(); 
-        $(".quick-menu").stop().animate({"top":position+currentPosition+"px"},1000);
-    });
-});
+//////플로팅메뉴
