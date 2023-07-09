@@ -1,31 +1,45 @@
 // app-btn toggle
-const appBtn=$('.appbarBt');
-const bg=$('.mob-bg');
-const mobContent=$('.mob-gnb .mob-content');
+const appBar = document.querySelector('.header-appBar');
+const mobCont = document.querySelector('.mob-content');
+const mobBg = document.querySelector('.mob-bg');
 
-appBtn.on({click: function() {
-    $('.bar').addClass('active');
-    bg.addClass('on');
-    mobContent.addClass('active');
-    }
-});
 
-bg.on({click: function() {
-    $('.bar').removeClass('active');
-    mobContent.removeClass('active');
-    bg.removeClass('on');
-    }
+appBar.addEventListener('click',function(){
+    mobCont.classList.add('active');
+    mobBg.classList.add('on');
 });
 
 
+mobBg.addEventListener('click',function(){
+    mobCont.classList.remove('active');
+    mobBg.classList.remove('on');
+});
+
+
+
+
+/* 
 //mob-nav depth toggle
-const menu = $('.mob-depth1');
+const menu = $('.mob-depth1 a');
 menu.click(function(){
     $(this).next('.mob-depth2').toggleClass('on')
 })
+ */
 
 
-//메인 슬라이드
+const mobDepth1Items = document.querySelectorAll('.mob-depth1');
+
+mobDepth1Items.forEach(function(item) {
+  item.addEventListener('click', function() {
+    const mobDepth2 = this.querySelector('.mob-depth2');
+    mobDepth2.classList.toggle('on');
+  });
+});
+
+
+
+
+//main banner
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
@@ -79,4 +93,20 @@ owl.owlCarousel({
     }    
 });
 
-//////플로팅메뉴
+//quick-memu
+const quickMenu = document.querySelector('.quick-menu');
+const section2 = document.querySelector('#section2');
+const section3 = document.querySelector('#section3');
+const section4 = document.querySelector('#section4');
+const section5 = document.querySelector('#section5');
+
+window.addEventListener('scroll', function() {
+  const scrollPosition = window.pageYOffset;
+
+  if (scrollPosition >= section2.offsetTop && scrollPosition < section5.offsetTop + section5.offsetHeight) {
+    quickMenu.style.display = 'block';
+  } else {
+    quickMenu.style.display = 'none';
+  }
+});
+
