@@ -126,7 +126,7 @@ document.getElementById('submit').onclick=function(){
                             alert('비밀번호가 일치하지 않습니다.'); 
                             return false;
                         }else{
-                            location.href='join.html'
+                            location.href='index.html'
                         }
                     }
                 }
