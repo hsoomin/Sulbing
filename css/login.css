@@ -1,59 +1,55 @@
+*{font-family: 'NanumSquareNeo', 'NanumSquareNeoExtraBold';}
 a,span{color: #666;}
 .ir_so{position: absolute;}
 
 .inner{ position: relative; width: 1100px; margin: 0 auto; box-sizing: border-box; padding: 0 30px;}
 
-.form .join-title .title{ position: relative; box-sizing: border-box; padding: 50px 0 70px;}
-.form .join-title .title h2{text-align: center; font-size: 36px; font-weight: bold;
+.form .join-title .title{ position: relative; box-sizing: border-box; padding: 30px 0 40px;}
+.form .join-title .title h2{text-align: center; font-size: 30px; font-weight: bold;
 /* display: inline-block; */ padding: 0 60px;color: #2d2d2d;}
-.form .join-title .title h2::before{content: url(../images/login/ico_tit_arrow_left.jpg); top:45px;left: 390px; position: absolute;}
-.form .join-title .title h2::after{content: url(../images/login/ico_tit_arrow_right.jpg); top: 45px; right: 390px;position: absolute;} 
+.form .join-title .title h2::before{content: url(../images/login/ico_tit_arrow_left.jpg); top:25px;left: 390px; position: absolute;}
+.form .join-title .title h2::after{content: url(../images/login/ico_tit_arrow_right.jpg); top: 25px; right: 390px;position: absolute;} 
 
-.form .join-title .location{ position: absolute; right: 30px; top: 70px;}
+.form .join-title .location{ position: absolute; right: 150px; top: 100px;}
 .form .join-title .location li{float: left; }
 .form .join-title .location li:last-child::before {content: ">";}
 .form .join-title .location li a{padding-right: 10px; font-size: 16px;}
 .form .join-title .location li:last-child a{padding-right: 0;}
 
+
+/* 
 .form .join-title .register_step{ display: flex; padding-bottom: 17px; border-bottom: 1px solid #ebebeb; margin-bottom: 50px; }
 .form .join-title .register_step li{position: relative;}
 .form .join-title .register_step li:before {content: ">";}
 .form .join-title .register_step li:first-child::before {content: none}
 .form .join-title .register_step li:first-child a{padding-left: 0;}
 .step3 a strong::before{content: url(../images/login/ico_register_step3.jpg);position: absolute; left: 14px; top: 4px;} 
-
 .form .join-title .register_step li:nth-child(3) a{color: #000;}
-.form .join-title .register_step li a{font-size: 18px; padding:0 20px;}
+.form .join-title .register_step li a{font-size: 18px; padding:0 20px;} */
 
-.form fieldset #join{width: 520px; margin: 0 auto; }
-.form fieldset #join h3{ color: #2d2d2d; margin-bottom: 30px; margin-top: 45px; font-size: 21px; font-weight: bold; text-align: center;}
-.form fieldset #join ul li{position: relative;}   /*span absol*/
 
+.form fieldset #join{width: 520px; margin: 0 auto;}
+.form fieldset #join h3{color: #2d2d2d; margin-bottom: 20px; font-size: 20px; font-weight: bold; text-align: center;}
+.form fieldset #join ul li{position: relative;} 
 .form fieldset #join ul li span{display: block;}
 .form fieldset #join ul li> .message{position: absolute; bottom:5px; left: 0;}
-
 .form fieldset #join ul li input{margin: 5px 0 25px 0;}
 .form fieldset #join ul li input.line{width: 100%;padding: 10px;box-sizing: border-box;border: none;border-bottom: 1px solid #ccc;}
-
 .form fieldset #join ul li:nth-child(2) input{margin: 0 0 25px 0;}
 .form fieldset #join ul li:nth-child(3) input{width:77%;}
 .form fieldset #join ul li:nth-child(4) input{width: 77%;}
-
-.form fieldset #join ul li button{ position: relative; top: 1px;  width: 110px; line-height: 40px; color: #666; font-size: 16px;
-background: #fff; border: 1px solid #ddd;}
-
+.form fieldset #join ul li button{ position: relative; top: 1px;  width: 116px; line-height: 40px; color: #666; font-size: 16px; background: #fff; border: 1px solid #ddd;}
 .form fieldset #join ul li span select{ width: 30%; float: left; border: 0; border-bottom: 1px solid #9a9a9a; height: 40px; line-height: 38px;}
 .form fieldset #join ul li em{width: 35%;float: left;box-sizing: border-box;padding-left: 40px;position: relative;
 display: block;}  /*display: block 추가*/
 .form fieldset #join ul li em:before {content: '';display: block;width: 10px;height: 1px;top: 30%;left: 15px;position: absolute;background: #9a9a9a;}
 
 .form fieldset #join .info-text{box-sizing: border-box; padding: 25px; background: #faf9f5;}
-.form fieldset #join .info-text dl dt{ font-size: 19px; font-weight: 800; margin-bottom: 10px; margin-top: 10px; color: #000;}
-.form fieldset #join .info-text dl dd{ margin-bottom: 15px; color: #000; font-size: 16px;}
+.form fieldset #join .info-text dl dt{ font-size: 18px; font-weight: 800; margin-bottom: 10px; margin-top: 10px; color: #000;}
+.form fieldset #join .info-text dl dd{ margin-bottom: 15px; color: #000; font-size: 15px;}
 .form fieldset #join .info-text dl dd::before{content: '-'; padding-right: 10px;}
 
-
-.form fieldset #join .btn-wrap{text-align: center; font-size: 0; margin-top: 60px;}
-.form fieldset #join .btn-wrap .btn{width: 200px;height: 60px;}
+.form fieldset #join .btn-wrap{text-align: center; margin-top: 20px; margin-bottom: 50px; }
+.form fieldset #join .btn-wrap .btn{width: 200px;height: 60px; position: relative;}
 .form fieldset #join .btn-wrap a{ display: inline-block; line-height: 60px; font-size: 22px; font-weight: 800; margin: 0 5px; color: #fff; background: #cdbbac;}
-.form fieldset #join .btn-wrap input{ color: #fff; background: #796150; line-height: 60px; font-size: 22px; font-weight: 800; margin: 0 5px; text-align: center; border:none;}
+.form fieldset #join .btn-wrap input{ color: #fff; background: #796150; line-height: 60px; font-size: 22px; font-weight: 800; margin: 0 5px; text-align: center; border:none; position: absolute; top: 3px;}
