@@ -16,17 +16,6 @@ mobBg.addEventListener('click',function(){
 });
 
 
-
-
-/* 
-//mob-nav depth toggle
-const menu = $('.mob-depth1 a');
-menu.click(function(){
-    $(this).next('.mob-depth2').toggleClass('on')
-})
- */
-
-
 const mobDepth1Items = document.querySelectorAll('.mob-depth1');
 
 mobDepth1Items.forEach(function(item) {
@@ -35,8 +24,6 @@ mobDepth1Items.forEach(function(item) {
     mobDepth2.classList.toggle('on');
   });
 });
-
-
 
 
 //main banner
@@ -57,7 +44,6 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
     });
-
 
 
 //best menu 슬라이드
@@ -101,12 +87,12 @@ const section4 = document.querySelector('#section4');
 const section5 = document.querySelector('#section5');
 
 window.addEventListener('scroll', function() {
-  const scrollPosition = window.pageYOffset;
+    const scrollPosition = window.pageYOffset;
 
-  if (scrollPosition >= section2.offsetTop && scrollPosition < section5.offsetTop + section5.offsetHeight) {
-    quickMenu.style.display = 'block';
-  } else {
-    quickMenu.style.display = 'none';
-  }
+    if (scrollPosition >= section2.offsetTop && scrollPosition < section5.offsetTop + section5.offsetHeight) {
+        quickMenu.style.display = 'block';
+    } else {
+        quickMenu.style.display = 'none';
+    }
 });
 
